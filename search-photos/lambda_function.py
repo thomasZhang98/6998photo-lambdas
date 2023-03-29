@@ -1,6 +1,5 @@
 import json
 import boto3
-import requests
 import json
 import inflection
 from opensearchpy import OpenSearch, RequestsHttpConnection

@@ -1,6 +1,4 @@
-import json
 import boto3
-import requests
 import json
 import inflection
 from opensearchpy import OpenSearch, RequestsHttpConnection
@@ -60,9 +58,7 @@ def lambda_handler(event, context):
     print(index_object)
 
     host = 'search-photos-47vmhipmmar5jhowic4lcpkjzu.us-east-1.es.amazonaws.com'
-    region = 'us-east-1'
     index_name = 'photos'
-    service = 'es'
     auth = ('master', 'Columbia@12')
     
     search = OpenSearch(hosts=[{
