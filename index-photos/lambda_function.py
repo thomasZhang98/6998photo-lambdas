@@ -55,7 +55,7 @@ def lambda_handler(event, context):
     }
     print(index_object)
 
-    host = 'search-photos-47vmhipmmar5jhowic4lcpkjzu.us-east-1.es.amazonaws.com'
+    host = 'search-photos-cf-a7cn7yvm7f3rvspzngd53jctty.us-east-1.es.amazonaws.com/'
     index_name = 'photos'
     auth = ('master', 'Columbia@12')
     

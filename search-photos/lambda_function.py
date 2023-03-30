@@ -6,7 +6,7 @@ from opensearchpy import OpenSearch, RequestsHttpConnection
 
 # Define the client to interact with Lex
 client = boto3.client('lexv2-runtime')
-HOST = 'search-photos-47vmhipmmar5jhowic4lcpkjzu.us-east-1.es.amazonaws.com'
+HOST = 'search-photos-cf-a7cn7yvm7f3rvspzngd53jctty.us-east-1.es.amazonaws.com/'
 REGION = 'us-east-1'
 INDEX = 'photos'
 
@@ -72,7 +72,7 @@ def lambda_handler(event, context):
     }
 
 def search(term):
-    q = {'size': 5, 'query': {'multi_match': {'query': term}}}
+    q = {'size': 10, 'query': {'multi_match': {'query': term}}}
 
     client = OpenSearch(hosts=[{
             'host': HOST,
