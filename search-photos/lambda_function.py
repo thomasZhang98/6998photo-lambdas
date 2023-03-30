@@ -3,7 +3,6 @@ import boto3
 import json
 import inflection
 from opensearchpy import OpenSearch, RequestsHttpConnection
-from requests_aws4auth import AWS4Auth
 
 # Define the client to interact with Lex
 client = boto3.client('lexv2-runtime')

@@ -1,8 +1,6 @@
 import boto3
-import json
 import inflection
 from opensearchpy import OpenSearch, RequestsHttpConnection
-from requests_aws4auth import AWS4Auth
 rek_client = boto3.client('rekognition')
 s3_client = boto3.client('s3')
 
