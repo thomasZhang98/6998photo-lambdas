@@ -6,7 +6,7 @@ from opensearchpy import OpenSearch, RequestsHttpConnection
 
 # Define the client to interact with Lex
 client = boto3.client('lexv2-runtime')
-HOST = 'search-photos-cf-a7cn7yvm7f3rvspzngd53jctty.us-east-1.es.amazonaws.com/'
+HOST = 'search-photos-cf-a7cn7yvm7f3rvspzngd53jctty.us-east-1.es.amazonaws.com'
 REGION = 'us-east-1'
 INDEX = 'photos'
 
