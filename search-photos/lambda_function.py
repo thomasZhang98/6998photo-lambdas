@@ -72,7 +72,7 @@ def lambda_handler(event, context):
     }
 
 def search(term):
-    q = {'size': 10, 'query': {'multi_match': {'query': term}}}
+    q = {'query': {'multi_match': {'query': term}}}
 
     client = OpenSearch(hosts=[{
             'host': HOST,
