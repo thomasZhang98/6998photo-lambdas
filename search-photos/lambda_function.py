@@ -11,6 +11,7 @@ REGION = 'us-east-1'
 INDEX = 'photos'
 
 def lambda_handler(event, context):
+    # new changes!!!!!!!!!!!!!!!!!!
     # TODO implement
     print(event)
     query = event['queryStringParameters']['q']
